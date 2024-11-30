@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Styled Dropdown</title>
+    <style>
+        /* Internal CSS */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .item1 {
+            font-family: Arial, sans-serif;
+            color: blue;
+            font-size: 16px;
+        }
+
+        .item2 {
+            font-family: 'Courier New', monospace;
+            color: green;
+            font-size: 18px;
+        }
+
+        .item3 {
+            font-family: 'Georgia', serif;
+            color: red;
+            font-size: 20px;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button>File</button>
+    <div class="dropdown-content">
+        <a href="#" class="dropdown-item item1">Item 1</a>
+        <a href="#" class="dropdown-item item2">Item 2</a>
+        <a href="#" class="dropdown-item item3">Item 3</a>
+
+    </div>
+</div>
+
+</body>
+</html>

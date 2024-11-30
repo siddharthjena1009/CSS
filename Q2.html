@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <style>
+        /* Container styles using the CSS box model */
+        .product-container {
+            width: 400px; /* Content width */
+            padding: 20px; /* Padding */
+            border: 10px solid #333; /* Border */
+            margin: 15px; /* Margin */
+            background-color: #f9f9f9;
+            box-sizing: border-box; /* Include padding and border in total width */
+            text-align: center; /* Center align content */
+        }
+
+        .product-image {
+            max-width: 100%; /* Ensure image fits within container */
+            height: auto;
+            border-radius: 5px; /* Rounded corners for the image */
+        }
+
+        .product-description {
+            margin-top: 10px; /* Space between the image and description */
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Arrange product containers in a row */
+        .product-row {
+            display: flex;
+            justify-content: center; /* Center align all products */
+            flex-wrap: wrap; /* Wrap to next line if not enough space */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Our Products</h1>
+    <div class="product-row">
+        <!-- Product 1 -->
+        <div class="product-container">
+            <img src="https://via.placeholder.com/350" alt="Product 1" class="product-image">
+            <p class="product-description">Product 1 - A brief description of this amazing product. It is designed to meet your needs and offer great value.</p>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-container">
+            <img src="https://via.placeholder.com/350" alt="Product 2" class="product-image">
+            <p class="product-description">Product 2 - This product is perfect for anyone looking for quality and durability. Check out its unique features.</p>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product-container">
+            <img src="https://via.placeholder.com/350" alt="Product 3" class="product-image">
+            <p class="product-description">Product 3 - Experience the best performance with this product. It combines style and functionality seamlessly.</p>
+        </div>
+    </div>
+</body>
+</html>

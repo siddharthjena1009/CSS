@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Styled Headings and Paragraphs</title>
+    <style>
+        /* Internal styles for h3 and h4 using id attribute */
+        #heading3 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #heading4 {
+            text-align: right;
+            font-weight: lighter;
+        }
+
+        /* Style for the body background, h5, and paragraphs using class attribute */
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .paragraph {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .heading5 {
+            font-size: 20px;
+            color: #007BFF;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline styles for h1 and h2 -->
+    <h1 style="color: #333; font-size: 32px;">This is an H1 Heading with Inline Styles</h1>
+    <h2 style="color: #555; font-size: 28px;">This is an H2 Heading with Inline Styles</h2>
+
+    <!-- Internal styles using IDs for h3 and h4 -->
+    <h3 id="heading3">This is an H3 Heading with Internal Styles</h3>
+    <h4 id="heading4">This is an H4 Heading with Internal Styles</h4>
+
+    <!-- External styles applied using class attribute for h5 and paragraph -->
+    <h5 class="heading5">This is an H5 Heading Styled with an External CSS Class</h5>
+    <p class="paragraph">This is a paragraph with text styled using an external CSS class. The text color and size are defined in the styles above.</p>
+    <p class="paragraph">Another paragraph with the same class applied, showing consistent styling.</p>
+</body>
+</html>

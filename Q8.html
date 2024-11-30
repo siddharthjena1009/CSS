@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Horizontal Repetition, Sticky Navbar, and Styled Text</title>
+    <style>
+        /* Styling for the navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        /* Styling for the image with horizontal repetition */
+        .repeated-image {
+            background-image: url('indian-ftr-1200_1588172877332_1588172877642_1589370092100.avif');
+            background-repeat: repeat-x;
+            height: 200px;
+            width:500pxpx;
+            border: 5px solid #4CAF50;
+            outline: 3px dashed #FF5722;
+        }
+
+        /* Styling for the text */
+        .styled-text {
+            font-size: 24px;
+            color: #444;
+            text-align: center;
+            margin-top: 20px;
+            padding: 0 10px;
+            line-height: 1.5;
+        }
+
+        /* Increase page height for scroll effect */
+        .content {
+            height: 1500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar with sticky positioning -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Image with horizontal repetition and border/outline styling -->
+    <div class="repeated-image"></div>
+
+    <!-- Styled text section -->
+    <div class="styled-text">
+        <h2>Welcome to the Stylish Page</h2>
+        <p>This page demonstrates a horizontally repeating image with custom border and outline styles, a sticky navigation bar with hover effects, and some styled text. Scroll down to see the sticky effect of the navbar.</p>
+    </div>
+
+    <!-- Extra content to increase the page height -->
+    <div class="content"></div>
+</body>
+</html>

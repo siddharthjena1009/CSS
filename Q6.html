@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(1), 
+        tr:nth-child(4), 
+        tr:nth-child(7), 
+        tr:nth-child(10),
+        tr:nth-child(3n + 10) {
+            background-color: #e0f7fa; /* Light cyan */
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff; /* White */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Light grey */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Styled Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apples</td>
+                <td>10</td>
+                <td>₹200</td>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td>5</td>
+                <td>₹150</td>
+            </tr>
+            <tr>
+                <td>Cherries</td>
+                <td>20</td>
+                <td>₹300</td>
+            </tr>
+            <tr>
+                <td>Dates</td>
+                <td>15</td>
+                <td>₹500</td>
+            </tr>
+            <tr>
+                <td>Elderberries</td>
+                <td>8</td>
+                <td>₹400</td>
+            </tr>
+            <tr>
+                <td>Figs</td>
+                <td>12</td>
+                <td>₹600</td>
+            </tr>
+            <tr>
+                <td>Grapes</td>
+                <td>25</td>
+                <td>₹450</td>
+            </tr>
+            <tr>
+                <td>Honeydew</td>
+                <td>10</td>
+                <td>₹350</td>
+            </tr>
+            <tr>
+                <td>Indian Fig</td>
+                <td>7</td>
+                <td>₹550</td>
+            </tr>
+            <tr>
+                <td>Jackfruit</td>
+                <td>5</td>
+                <td>₹1000</td>
+            </tr>
+            <tr>
+                <td>Kiwifruit</td>
+                <td>15</td>
+                <td>₹400</td>
+            </tr>
+            <tr>
+                <td>Lemon</td>
+                <td>20</td>
+                <td>₹250</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
